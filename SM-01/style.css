@@ -1,0 +1,134 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(300deg, #FFA500, #FFFFFF); 
+    font-family: Arial, sans-serif; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 0vh;
+    position: fixed;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: transparent;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+video {
+    max-width: 100%; 
+    max-height: 33vh;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    margin-right:50px;
+    margin-top: -20px;
+
+}
+
+.captured-images {
+    position: absolute;
+    top: 30%; 
+    left: 0; 
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 350px;
+    height: 330px; 
+    padding: 10px;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    margin-top:330px;
+}
+
+
+.captured-image {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    background-color: #ff8800;
+    font-size: medium;
+    font-weight: 500;
+    font-family: poppins;
+    border-radius: 20px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.button-container {
+    display: flex;  
+    margin-top: -190px;
+    margin-right: 50px;
+    
+}
+#toggleCameraButton,
+#captureButton {
+    margin: 5px; 
+    padding: 10px;
+    background-color:#fff;
+    color:#FFA500; 
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: smaller;
+    
+}
+
+#toggleCameraButton:hover,
+#captureButton:hover {
+    background-color:#ffffff8d;
+}
+.image-description {
+    width: 90%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.delete-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color:#FFA500;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color:#efefef;
+}
+.header {
+    position: absolute;
+    top: 0;
+    padding: 5px 20px; 
+    background-color:#fff; 
+    color:#ff8800; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    margin-left: 89px;
+    
+}
+.site-name {
+    font-weight: bold;
+}
